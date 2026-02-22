@@ -83,7 +83,7 @@ const Index = () => {
           <div className="flex items-center gap-3">
             <img src={logoStan} alt="Stan Financeira" className="h-10 w-auto" />
           </div>
-          <button onClick={handleWhatsAppClick}>
+          <button id="whatsapp-header" onClick={handleWhatsAppClick}>
             <Button size="sm" className="gap-2 bg-accent text-accent-foreground hover:bg-accent/90 font-semibold">
               <Phone className="h-4 w-4" />
               Fale Conosco
@@ -117,6 +117,7 @@ const Index = () => {
           </motion.p>
           <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={2}>
             <Button
+              id="whatsapp-hero"
               onClick={handleWhatsAppClick}
               size="lg"
               className="gap-3 bg-[#25D366] text-white hover:bg-[#20bd5a] px-10 py-6 text-lg font-bold shadow-lg shadow-[#25D366]/30 transition-transform hover:scale-105"
@@ -261,6 +262,7 @@ const Index = () => {
             custom={2}
           >
             <Button
+              id="whatsapp-cta"
               onClick={handleWhatsAppClick}
               size="lg"
               className="gap-3 bg-[#25D366] text-white hover:bg-[#20bd5a] px-10 py-6 text-lg font-bold shadow-lg shadow-[#25D366]/30 transition-transform hover:scale-105"
@@ -290,6 +292,7 @@ const Index = () => {
 
       {/* Floating WhatsApp Button */}
       <motion.button
+        id="whatsapp-float"
         onClick={handleWhatsAppClick}
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
