@@ -126,6 +126,10 @@ const Index = () => {
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Stan Financeira. Todos os direitos reservados.
           </p>
+          <div className="mt-4 space-y-1 text-xs text-muted-foreground/70">
+            <p>STAN FINANCEIRA LTDA — CNPJ: 58.581.292/0001-83</p>
+            <p>Av. Graciela Flores de Piteri, 255, Bloco 13 Apt 14 — Aliança, Osasco/SP — CEP 06.236-215</p>
+          </div>
         </div>
       </footer>
 
