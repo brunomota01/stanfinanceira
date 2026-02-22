@@ -1,4 +1,4 @@
-import { MessageCircle, Shield, Clock, Users, TrendingDown, Phone } from "lucide-react";
+import { MessageCircle, Shield, Clock, Users, TrendingDown, Phone, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import logoStan from "@/assets/logo-stan.webp";
@@ -25,6 +25,27 @@ const benefits = [
     icon: Users,
     title: "Atendimento Personalizado",
     description: "Equipe especializada para encontrar a melhor solução para você.",
+  },
+];
+
+const testimonials = [
+  {
+    name: "Maria Silva",
+    role: "Aposentada",
+    text: "Consegui meu crédito em menos de 24 horas! Atendimento excelente e taxas muito abaixo do que encontrei em outros lugares.",
+    rating: 5,
+  },
+  {
+    name: "Carlos Oliveira",
+    role: "Servidor Público",
+    text: "Processo totalmente digital e sem burocracia. A equipe da Stan me ajudou a encontrar a melhor opção para o meu perfil.",
+    rating: 5,
+  },
+  {
+    name: "Ana Santos",
+    role: "Pensionista",
+    text: "Indico para todos! Fui muito bem atendida e as condições foram as melhores que encontrei. Muito obrigada, Stan!",
+    rating: 5,
   },
 ];
 
@@ -91,6 +112,38 @@ const Index = () => {
                   </div>
                   <h3 className="mb-2 text-lg font-bold text-foreground">{b.title}</h3>
                   <p className="text-sm text-muted-foreground">{b.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="bg-muted/40 py-20 md:py-28">
+        <div className="container mx-auto px-4">
+          <h2 className="mb-4 text-center text-3xl font-bold text-foreground md:text-4xl">
+            O que nossos clientes dizem
+          </h2>
+          <p className="mx-auto mb-14 max-w-xl text-center text-muted-foreground">
+            A satisfação dos nossos clientes é o nosso maior orgulho.
+          </p>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {testimonials.map((t) => (
+              <Card key={t.name} className="border-border/50 bg-card">
+                <CardContent className="flex flex-col p-8">
+                  <div className="mb-4 flex gap-1">
+                    {Array.from({ length: t.rating }).map((_, i) => (
+                      <Star key={i} className="h-5 w-5 fill-accent text-accent" />
+                    ))}
+                  </div>
+                  <p className="mb-6 flex-1 text-sm italic text-muted-foreground">
+                    "{t.text}"
+                  </p>
+                  <div>
+                    <p className="font-bold text-foreground">{t.name}</p>
+                    <p className="text-xs text-muted-foreground">{t.role}</p>
+                  </div>
                 </CardContent>
               </Card>
             ))}
