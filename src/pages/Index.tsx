@@ -78,14 +78,14 @@ const Index = () => {
       </header>
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-primary py-20 md:py-32">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(213_80%_55%/0.3),transparent_70%)]" />
+      <section className="relative overflow-hidden bg-secondary py-20 md:py-32">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(38_70%_55%/0.15),transparent_70%)]" />
         <div className="container relative mx-auto px-4 text-center">
           <motion.h1
             variants={fadeUp}
             initial="hidden"
             animate="visible"
-            className="mb-6 text-4xl font-extrabold leading-tight tracking-tight text-primary-foreground md:text-6xl"
+            className="mb-6 text-4xl font-extrabold leading-tight tracking-tight text-foreground md:text-6xl"
           >
             Crédito Consignado
             <br />
@@ -96,7 +96,7 @@ const Index = () => {
             initial="hidden"
             animate="visible"
             custom={1}
-            className="mx-auto mb-10 max-w-2xl text-lg text-primary-foreground/80 md:text-xl"
+            className="mx-auto mb-10 max-w-2xl text-lg text-foreground/70 md:text-xl"
           >
             Conquiste seus objetivos com as melhores condições do mercado. Taxas reduzidas, aprovação rápida e atendimento humanizado.
           </motion.p>
@@ -148,7 +148,7 @@ const Index = () => {
               >
                 <Card className="group h-full border-border/50 bg-card transition-all hover:shadow-xl hover:-translate-y-1">
                   <CardContent className="flex flex-col items-center p-8 text-center">
-                    <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+                    <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-accent/10 text-accent transition-colors group-hover:bg-accent group-hover:text-accent-foreground">
                       <b.icon className="h-7 w-7" />
                     </div>
                     <h3 className="mb-2 text-lg font-bold text-foreground">{b.title}</h3>
@@ -216,14 +216,14 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-primary py-16">
+      <section className="bg-secondary py-16">
         <div className="container mx-auto px-4 text-center">
           <motion.h2
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
-            className="mb-4 text-3xl font-bold text-primary-foreground md:text-4xl"
+            className="mb-4 text-3xl font-bold text-foreground md:text-4xl"
           >
             Pronto para conquistar seu crédito?
           </motion.h2>
@@ -233,7 +233,7 @@ const Index = () => {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             custom={1}
-            className="mx-auto mb-8 max-w-lg text-primary-foreground/80"
+            className="mx-auto mb-8 max-w-lg text-foreground/70"
           >
             Fale agora com um de nossos consultores pelo WhatsApp e descubra as condições especiais para você.
           </motion.p>
