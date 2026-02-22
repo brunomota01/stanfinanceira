@@ -2,7 +2,7 @@ import { MessageCircle, Shield, Clock, Users, TrendingDown, Phone, Star } from "
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import logoStan from "@/assets/logo-stan.webp";
+import logoStan from "@/assets/logo-stan.png";
 
 const WHATSAPP_URL = "https://wa.me/5511915957140?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20cr%C3%A9dito%20consignado.";
 
