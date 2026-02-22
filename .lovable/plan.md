@@ -1,40 +1,20 @@
 
 
-# Landing Page - Stan Financeira
+# Adicionar CNPJ no Footer da Landing Page
 
-## Visão Geral
-Página de captura profissional para a Stan Financeira, com foco em crédito consignado e direcionamento direto para o WhatsApp da empresa.
+## O que será feito
+Adicionar as informações do CNPJ da Stan Financeira no rodapé da página, dando mais credibilidade e transparência ao site.
 
-## Design e Identidade Visual
-- Cores baseadas no site original: tons de azul e branco
-- Logo da Stan Financeira incorporada no topo
-- Design limpo, moderno e responsivo (mobile-first)
+## Informações que serão adicionadas
+- **Razão Social:** STAN FINANCEIRA LTDA
+- **CNPJ:** 58.581.292/0001-83
+- **Endereço:** Av. Graciela Flores de Piteri, 255, Bloco 13 Apt 14 - Aliança, Osasco/SP - CEP 06.236-215
 
-## Estrutura da Página
+## Onde aparecerá
+No footer (rodapé) da página, abaixo do logo, de forma discreta e profissional.
 
-### 1. Header
-- Logo da Stan Financeira
-- Nome da empresa
-
-### 2. Seção Hero
-- Título chamativo sobre crédito consignado
-- Subtítulo com os benefícios principais (taxas competitivas, aprovação rápida)
-- Botão grande e destacado de WhatsApp com ícone
-
-### 3. Benefícios
-- Cards com os principais diferenciais: taxas baixas, sem burocracia, atendimento personalizado, aprovação rápida
-
-### 4. Call-to-Action (CTA)
-- Botão flutuante do WhatsApp sempre visível na tela
-- Redirecionamento para: `https://wa.me/5511915957140` com mensagem pré-definida: "Olá! Gostaria de saber mais sobre crédito consignado."
-
-### 5. Footer
-- Informações da empresa
-- Direitos reservados
-
-## Funcionalidades
-- Botão de WhatsApp flutuante (sempre visível)
-- Links diretos para conversa no WhatsApp com mensagem automática
-- Layout 100% responsivo para celular e desktop
-- Animações suaves de entrada nos elementos
+## Detalhes Técnicos
+- Arquivo editado: `src/pages/Index.tsx`
+- As informações serão adicionadas na seção `<footer>`, abaixo do copyright existente
+- Texto em tamanho pequeno e cor suave para não poluir o visual
 
