@@ -101,8 +101,8 @@ const Index = () => {
           >
             Conquiste seus objetivos com as melhores condições do mercado. Taxas reduzidas, aprovação rápida e atendimento humanizado.
           </motion.p>
-          <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={2}>
-            <a id="whatsapp-hero" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="relative z-10">
+          <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={2} className="relative z-10 pointer-events-auto">
+            <a id="whatsapp-hero" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-block">
               <Button
                 size="lg"
                 className="gap-3 bg-[#25D366] text-white hover:bg-[#20bd5a] px-10 py-6 text-lg font-bold shadow-lg shadow-[#25D366]/30 transition-transform hover:scale-105 pointer-events-auto"
