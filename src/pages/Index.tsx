@@ -69,12 +69,6 @@ const Index = () => {
           <div className="flex items-center gap-3">
             <img src={logoStan} alt="Stan Financeira" className="h-10 w-auto" />
           </div>
-          <a id="whatsapp-header" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="relative z-10">
-            <Button size="sm" className="gap-2 bg-accent text-accent-foreground hover:bg-accent/90 font-semibold pointer-events-auto">
-              <Phone className="h-4 w-4" />
-              Fale Conosco
-            </Button>
-          </a>
         </div>
       </header>
 
