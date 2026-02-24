@@ -113,7 +113,7 @@ const Index = () => {
             custom={1}
             className="mx-auto mb-14 max-w-xl text-center text-muted-foreground">
 
-            Somos especialistas em crédito consignado e trabalhamos para oferecer a melhor experiência.
+            Somos especialistas em crédito consignado para CLT e trabalhamos para oferecer a melhor experiência.
           </motion.p>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {benefits.map((b, i) =>
