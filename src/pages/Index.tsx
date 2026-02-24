@@ -65,7 +65,7 @@ const Index = () => {
 
             Crédito Consignado
             <br />
-            <span className="text-accent">Liberado Para CLT</span>
+            <span className="text-accent"> Para CLT</span>
           </motion.h1>
           <motion.p
             variants={fadeUp}
