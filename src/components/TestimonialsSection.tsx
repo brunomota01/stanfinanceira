@@ -63,7 +63,7 @@ const testimonials = [
     image: testimonial8,
   },
   {
-    name: "Cliente",
+    name: "Jeferson",
     role: "Aprovação rápida",
     text: "Documentos enviados e crédito liberado sem burocracia!",
     rating: 5,
