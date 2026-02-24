@@ -77,7 +77,7 @@ const Index = () => {
             Conquiste seus objetivos com as melhores condições do mercado. Taxas reduzidas, aprovação rápida e atendimento humanizado.
           </motion.p>
           <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={2} style={{ pointerEvents: "auto", position: "relative", zIndex: 50 }}>
-            <a id="whatsapp-hero" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" style={{ pointerEvents: "auto", position: "relative", zIndex: 50 }}>
+            <a id="whatsapp-hero" href={WHATSAPP_URL} rel="noopener noreferrer" style={{ pointerEvents: "auto", position: "relative", zIndex: 50 }}>
               <Button
                 size="lg"
                 className="gap-3 bg-[#25D366] text-white hover:bg-[#20bd5a] px-10 py-6 text-lg font-bold shadow-lg shadow-[#25D366]/30 transition-transform hover:scale-105 cursor-pointer"
@@ -173,7 +173,7 @@ const Index = () => {
             custom={2}
             style={{ pointerEvents: "auto", position: "relative", zIndex: 50 }}>
 
-            <a id="whatsapp-cta" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" style={{ pointerEvents: "auto", position: "relative", zIndex: 50 }}>
+            <a id="whatsapp-cta" href={WHATSAPP_URL} rel="noopener noreferrer" style={{ pointerEvents: "auto", position: "relative", zIndex: 50 }}>
               <Button
                 size="lg"
                 className="gap-3 bg-[#25D366] text-white hover:bg-[#20bd5a] px-10 py-6 text-lg font-bold shadow-lg shadow-[#25D366]/30 transition-transform hover:scale-105 cursor-pointer"
@@ -207,7 +207,6 @@ const Index = () => {
       <motion.a
         id="whatsapp-float"
         href={WHATSAPP_URL}
-        target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
