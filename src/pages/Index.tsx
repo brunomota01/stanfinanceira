@@ -11,23 +11,23 @@ const WHATSAPP_URL = "https://wa.me/5511915957140?text=Ol%C3%A1!%20Gostaria%20de
 const benefits = [
   {
     icon: TrendingDown,
-    title: "Taxas Competitivas",
-    description: "As melhores taxas do mercado para o seu crédito consignado.",
+    title: "As Menores Taxas",
+    description: "As menores taxas do mercado. Parcelamento em até 48x.",
   },
   {
     icon: Clock,
-    title: "Aprovação Rápida",
-    description: "Processo ágil e simplificado. Seu crédito aprovado em poucas horas.",
+    title: "Prazos Flexíveis",
+    description: "Prazos flexíveis para caber no seu orçamento.",
   },
   {
     icon: Shield,
-    title: "Sem Burocracia",
-    description: "Documentação mínima e processo 100% digital.",
+    title: "100% Digital",
+    description: "Contrate de onde estiver, sem burocracia.",
   },
   {
     icon: Users,
-    title: "Atendimento Personalizado",
-    description: "Equipe especializada para encontrar a melhor solução para você.",
+    title: "Liberação Rápida",
+    description: "Dinheiro na conta em até 24 horas úteis.",
   },
 ];
 
@@ -63,9 +63,9 @@ const Index = () => {
             animate="visible"
             className="mb-6 text-4xl font-extrabold leading-tight tracking-tight text-foreground md:text-6xl"
           >
-            Crédito Consignado
+            + de R$ 1 Milhão
             <br />
-            <span className="text-accent">Simples e Rápido</span>
+            <span className="text-accent">em Crédito Liberado</span>
           </motion.h1>
           <motion.p
             variants={fadeUp}
@@ -74,7 +74,7 @@ const Index = () => {
             custom={1}
             className="mx-auto mb-10 max-w-2xl text-lg text-foreground/70 md:text-xl"
           >
-            Conquiste seus objetivos com as melhores condições do mercado. Taxas reduzidas, aprovação rápida e atendimento humanizado.
+            Especialistas em Consignado CLT. As melhores condições do mercado com juros mais baratos e atendimento humanizado.
           </motion.p>
           <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={2} style={{ pointerEvents: "auto", position: "relative", zIndex: 50 }}>
             <a id="whatsapp-hero" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" style={{ pointerEvents: "auto", position: "relative", zIndex: 50 }}>
