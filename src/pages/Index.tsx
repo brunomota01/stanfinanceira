@@ -153,7 +153,7 @@ const Index = () => {
             viewport={{ once: true, margin: "-100px" }}
             className="mb-4 text-3xl font-bold text-foreground md:text-4xl">
 
-            Pronto para conquistar seu crédito?
+            Pronto para conquistar seu crédito CLT?
           </motion.h2>
           <motion.p
             variants={fadeUp}
