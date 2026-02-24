@@ -1,8 +1,9 @@
-import { MessageCircle, Shield, Clock, Users, TrendingDown, Phone, Star } from "lucide-react";
+import { Shield, Clock, Users, TrendingDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import logoStan from "@/assets/logo-stan.png";
+import TestimonialsSection from "@/components/TestimonialsSection";
 
 const WHATSAPP_URL = "https://wa.me/5511915957140?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20cr%C3%A9dito%20consignado.";
 
@@ -30,26 +31,6 @@ const benefits = [
   },
 ];
 
-const testimonials = [
-  {
-    name: "Maria Silva",
-    role: "Aposentada",
-    text: "Consegui meu crédito em menos de 24 horas! Atendimento excelente e taxas muito abaixo do que encontrei em outros lugares.",
-    rating: 5,
-  },
-  {
-    name: "Carlos Oliveira",
-    role: "Servidor Público",
-    text: "Processo totalmente digital e sem burocracia. A equipe da Stan me ajudou a encontrar a melhor opção para o meu perfil.",
-    rating: 5,
-  },
-  {
-    name: "Ana Santos",
-    role: "Pensionista",
-    text: "Indico para todos! Fui muito bem atendida e as condições foram as melhores que encontrei. Muito obrigada, Stan!",
-    rating: 5,
-  },
-];
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -160,58 +141,7 @@ const Index = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-muted/40 py-20 md:py-28">
-        <div className="container mx-auto px-4">
-          <motion.h2
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            className="mb-4 text-center text-3xl font-bold text-foreground md:text-4xl"
-          >
-            O que nossos clientes dizem
-          </motion.h2>
-          <motion.p
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            custom={1}
-            className="mx-auto mb-14 max-w-xl text-center text-muted-foreground"
-          >
-            A satisfação dos nossos clientes é o nosso maior orgulho.
-          </motion.p>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {testimonials.map((t, i) => (
-              <motion.div
-                key={t.name}
-                variants={fadeUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-50px" }}
-                custom={i}
-              >
-                <Card className="h-full border-border/50 bg-card">
-                  <CardContent className="flex flex-col p-8">
-                    <div className="mb-4 flex gap-1">
-                      {Array.from({ length: t.rating }).map((_, i) => (
-                        <Star key={i} className="h-5 w-5 fill-accent text-accent" />
-                      ))}
-                    </div>
-                    <p className="mb-6 flex-1 text-sm italic text-muted-foreground">
-                      "{t.text}"
-                    </p>
-                    <div>
-                      <p className="font-bold text-foreground">{t.name}</p>
-                      <p className="text-xs text-muted-foreground">{t.role}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection />
 
       {/* CTA Section */}
       <section className="bg-secondary py-16">
