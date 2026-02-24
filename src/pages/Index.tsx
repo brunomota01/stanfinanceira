@@ -65,7 +65,7 @@ const Index = () => {
 
             Crédito Consignado
             <br />
-            <span className="text-accent">em Crédito Liberado Para CLT</span>
+            <span className="text-accent">Liberado Para CLT</span>
           </motion.h1>
           <motion.p
             variants={fadeUp}
@@ -153,7 +153,7 @@ const Index = () => {
             viewport={{ once: true, margin: "-100px" }}
             className="mb-4 text-3xl font-bold text-foreground md:text-4xl">
 
-            Pronto para conquistar seu crédito CLT?
+            Pronto para conquistar seu crédito?
           </motion.h2>
           <motion.p
             variants={fadeUp}
